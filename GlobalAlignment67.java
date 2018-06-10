@@ -162,15 +162,11 @@ public class GlobalAlignment67 {
 	// Trace back from the lower-right corner of the matrix
 	//
 	
-	//Exercise 6 start
 	int pathCount = pathCounter(m,n);
 	
     System.out.println("number of paths: "+pathCount);
    
-    //Exercise 6 finish
-    
-    // Exercise 7 start
-    
+  
     
     for(int a=0; a<pathCount; a++){
     al.add("");
@@ -254,17 +250,16 @@ public class GlobalAlignment67 {
 			}
 			System.out.println();
 			
-			// Exercise 1 start
 			for ( i=alignmentLength-1 ; i>=0 ; i-- ) {
 				if(alignX[i] == alignY[i]) {
 					System.out.print("|");
-					similarityCount++; //Exercise 2 counter
+					similarityCount++; 
 				}else {
 					System.out.print(" ");
 				}
 			}
 			System.out.println();
-			// Exercise 1 finish
+			
 			
 			for ( i=alignmentLength-1 ; i>=0 ; i-- ) {
 				System.out.print(alignY[i]);
@@ -272,14 +267,14 @@ public class GlobalAlignment67 {
 			System.out.println();
 			System.out.println();
 			
-		//Exercise 7 finish	
+			
 		
 	}
 	
 
     }  
     
-    //Exercise 6 function
+  
     public static int pathCounter(int i, int j) {          
    
    
@@ -304,7 +299,7 @@ public class GlobalAlignment67 {
     	}
 
     } 
-    //Exercise 7 function
+	
     public static void pathFinder(int i, int j) {
     	   
     	   
