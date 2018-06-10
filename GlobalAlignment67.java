@@ -69,29 +69,6 @@ public class GlobalAlignment67 {
 	for ( i=1 ; i<=m ; i++ ) {
 
 		for ( j=1 ; j<=n ; j++ ) {
-		/*	
-			if ( X.charAt(i-1)==Y.charAt(j-1) ) {
-				score = F[i-1][j-1] + MATCH_SCORE;
-			} else {
-				score = F[i-1][j-1] + MISMATCH_SCORE;
-			}
-			trace[i][j] = DIAG;
-
-			tmp = F[i-1][j] + GAP_PENALTY;
-			if ( tmp>score ) {
-				score = tmp;
-				trace[i][j] = UP;
-			}
-
-			tmp = F[i][j-1] + GAP_PENALTY;
-			if( tmp>score ) {
-				score = tmp;
-				trace[i][j] = LEFT;
-			}
-
-			F[i][j] = score;
-			
-			*/
 			
 			if ( X.charAt(i-1)==Y.charAt(j-1) ) {
 				tmpDiag = F[i-1][j-1] + MATCH_SCORE;
